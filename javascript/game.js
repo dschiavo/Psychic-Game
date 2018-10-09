@@ -27,17 +27,17 @@ document.onkeypress = function(event) {
         guessesLeft--;
     }
 
-    if(guesses === 0){
+    if(guessesLeft === 0){
         loss++
     }
 
     //creating variables to hold references
-    var winText = document.getElementById('wins');
-    var lossText = document.getElementById('losses');
-    var guessesLeftText = document.getElementById('guesses');
-    var guessesSoFar = document.getElementById("guessesSoFar");
+    var winText = document.getElementById(wins);
+    var lossText = document.getElementById(losses);
+    var guessesLeftText = document.getElementById(guessesLeft);
+    var guessesSoFar = document.getElementById(guessesSoFar);
 
     //display results
-    <p id = wintext>winText.innerHTML = "Wins: " + wins</p> ;
+    winText.innerHTML = "Wins: " + wins;
     lossText.innerHTML = "Losses: " +loss;
     guessesLeftText.innerHTML = "Guesses Left: " + guessesLeft;
